@@ -2,7 +2,11 @@ const fullPageURL = apiBase + pagesBase;
 const fullProductURL = apiBase + woocomerceBase + productBase;
 const fullProductURLExample = "http://localhost/flower-power/wp-json/wc/v3/products"
  
+const apiBase = "http://localhost/flower-power"
+const woocomerceBase = "wp-json/wc/v3"
+const productBase = "/products"
  
+const pagesBase = "/wp-json/wc/v3/products"
  
  async function getProducts () {
     const response = await fetch(fullProductURL);
